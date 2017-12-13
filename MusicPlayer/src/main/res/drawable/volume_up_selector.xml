@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/up_volume_p" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/up_volume_f_music" android:state_focused="true"></item>
+    <item android:drawable="@drawable/up_volume_f_music" android:state_focused="false"></item>
+
+</selector>

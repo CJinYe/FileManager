@@ -1,0 +1,276 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="@dimen/activity_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/filelist_rl_file_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.icox.share.CircleImageView
+                        android:id="@+id/viewpager_iv_01"
+                        android:background="@mipmap/baby_video_dir_item_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <RelativeLayout
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:background="@mipmap/baby_video_dir_item_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/filelist_viewpager_tv_01"
+                            android:singleLine="true"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/filelist_rl_file_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.icox.share.CircleImageView
+                        android:id="@+id/viewpager_iv_02"
+                        android:background="@mipmap/baby_video_dir_item_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <RelativeLayout
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:background="@mipmap/baby_video_dir_item_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/filelist_viewpager_tv_02"
+                            android:singleLine="true"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/filelist_rl_file_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.icox.share.CircleImageView
+                        android:id="@+id/viewpager_iv_03"
+                        android:background="@mipmap/baby_video_dir_item_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <RelativeLayout
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:background="@mipmap/baby_video_dir_item_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/filelist_viewpager_tv_03"
+                            android:singleLine="true"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/filelist_rl_file_04"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.icox.share.CircleImageView
+                        android:id="@+id/viewpager_iv_04"
+                        android:background="@mipmap/baby_video_dir_item_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <RelativeLayout
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:background="@mipmap/baby_video_dir_item_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/filelist_viewpager_tv_04"
+                            android:singleLine="true"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/filelist_rl_file_05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.icox.share.CircleImageView
+                        android:id="@+id/viewpager_iv_05"
+                        android:background="@mipmap/baby_video_dir_item_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <RelativeLayout
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:background="@mipmap/baby_video_dir_item_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/filelist_viewpager_tv_05"
+                            android:singleLine="true"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/filelist_rl_file_06"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.icox.share.CircleImageView
+                        android:id="@+id/viewpager_iv_06"
+                        android:background="@mipmap/baby_video_dir_item_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <RelativeLayout
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:background="@mipmap/baby_video_dir_item_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/filelist_viewpager_tv_06"
+                            android:singleLine="true"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/filelist_rl_file_07"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.icox.share.CircleImageView
+                        android:id="@+id/viewpager_iv_07"
+                        android:background="@mipmap/baby_video_dir_item_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <RelativeLayout
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:background="@mipmap/baby_video_dir_item_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/filelist_viewpager_tv_07"
+                            android:singleLine="true"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:id="@+id/filelist_rl_file_08"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.icox.share.CircleImageView
+                        android:id="@+id/viewpager_iv_08"
+                        android:background="@mipmap/baby_video_dir_item_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <RelativeLayout
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:background="@mipmap/baby_video_dir_item_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/filelist_viewpager_tv_08"
+                            android:singleLine="true"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

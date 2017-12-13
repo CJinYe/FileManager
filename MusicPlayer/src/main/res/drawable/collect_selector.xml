@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/collect_p"
+          android:state_checked="true"
+          android:state_focused="false"/>
+    <item android:drawable="@drawable/collect_p_focus"
+          android:state_checked="true"
+          android:state_focused="true"/>
+    <item android:drawable="@drawable/collect_f_focus"
+          android:state_checked="false"
+          android:state_focused="true"/>
+    <item android:drawable="@drawable/collect_f"
+          android:state_checked="false"
+          android:state_focused="false"/>
+
+</selector>

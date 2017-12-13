@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_playing">
+
+    <!--&lt;!&ndash;歌词布局:LrcviewLayout&ndash;&gt;-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/lrcviewLayout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/bottomLayout"-->
+        <!--android:layout_margin="40dp"-->
+        <!--android:layout_toStartOf="@+id/mSmallMenu"-->
+        <!--android:visibility="gone">-->
+
+        <!--&lt;!&ndash;歌曲名&ndash;&gt;-->
+        <!--<com.icox.administrator.icoxmp3player.myview.floatable_textview.FloatableTextView-->
+            <!--android:id="@+id/songTitle"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:textSize="48sp" />-->
+
+        <!--&lt;!&ndash; 歌词&ndash;&gt;-->
+        <!--<com.icox.administrator.icoxmp3player.myview.lrcview.LrcView-->
+            <!--android:id="@+id/LyricShow"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_below="@+id/songTitle"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#99ffffff" />-->
+    <!--</RelativeLayout>-->
+
+    <!--&lt;!&ndash;专辑布局:AlbumLayout&ndash;&gt;-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/albumLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_above="@+id/bottomLayout"-->
+        <!--android:layout_margin="30dp"-->
+        <!--android:layout_toStartOf="@+id/mSmallMenu"-->
+        <!--android:visibility="visible">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_toStartOf="@+id/childSingerLayout">-->
+
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/showAlbumPicture"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:padding="1dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/default_album" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/showAlbumPicture_bg"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="251dip"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="251dip"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/frame" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="250dip"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="250dip"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/frame">&ndash;&gt;-->
+
+            <!--&lt;!&ndash; &ndash;&gt;-->
+            <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/showAlbumPicture_bg"-->
+                <!--android:layout_width="251dip"-->
+                <!--android:layout_height="251dip"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:src="@drawable/frame" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/showAlbumPicture"-->
+                <!--android:layout_width="250dip"-->
+                <!--android:layout_height="250dip"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:src="@drawable/default_album" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/childalbumLayout"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_above="@+id/childSingerLayout"-->
+            <!--android:layout_alignLeft="@+id/childSingerLayout"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_centerVertical="true">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/album"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:src="@drawable/album" />-->
+
+            <!--&lt;!&ndash; 专辑名&ndash;&gt;-->
+            <!--<com.icox.administrator.icoxmp3player.myview.floatable_textview.FloatableTextView-->
+                <!--android:id="@+id/showAlbumText"-->
+                <!--android:layout_width="300px"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_toEndOf="@+id/album"-->
+                <!--android:singleLine="true"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="36sp" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/childSingerLayout"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_centerVertical="true">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/singer"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:src="@drawable/singer" />-->
+            <!--&lt;!&ndash;歌手&ndash;&gt;-->
+            <!--<com.icox.administrator.icoxmp3player.myview.floatable_textview.FloatableTextView-->
+                <!--android:id="@+id/showSinger"-->
+                <!--android:layout_width="300px"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_toEndOf="@+id/singer"-->
+                <!--android:singleLine="true"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="36sp" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/childSongLayout"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignLeft="@+id/childSingerLayout"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_below="@+id/childSingerLayout"-->
+            <!--android:layout_centerVertical="true">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/song"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:src="@drawable/song" />-->
+            <!--&lt;!&ndash;歌曲&ndash;&gt;-->
+            <!--<com.icox.administrator.icoxmp3player.myview.floatable_textview.FloatableTextView-->
+                <!--android:id="@+id/showSong"-->
+                <!--android:layout_width="300px"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_toEndOf="@+id/song"-->
+                <!--android:singleLine="true"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="36sp" />-->
+        <!--</RelativeLayout>-->
+    <!--</RelativeLayout>-->
+
+    <!--&lt;!&ndash;歌曲进度&ndash;&gt;-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/bottomLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/rl_control"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginStart="30dp"-->
+        <!--android:layout_toStartOf="@+id/mSmallMenu"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--&lt;!&ndash;当前歌曲播放的时间&ndash;&gt;-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_curcentTime"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/tv_curcentTime"-->
+                <!--android:textColor="#fff"-->
+                <!--android:textSize="24sp" />-->
+            <!--&lt;!&ndash;歌曲播放的进度条&ndash;&gt;-->
+            <!--<SeekBar-->
+                <!--android:id="@+id/seekBar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_toEndOf="@+id/tv_curcentTime"-->
+                <!--android:layout_toStartOf="@+id/tv_allTime" />-->
+            <!--&lt;!&ndash;歌曲的时长&ndash;&gt;-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_allTime"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/tv_allTime"-->
+                <!--android:textColor="#fff"-->
+                <!--android:textSize="24sp" />-->
+        <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;底部的按钮操作&ndash;&gt;-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/rl_control"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="8">-->
+
+        <!--&lt;!&ndash;降低音量&ndash;&gt;-->
+        <!--<ImageView-->
+            <!--android:id="@+id/downVolume"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/down_volume_f"-->
+            <!--android:button="@null"-->
+            <!--android:clickable="true" />-->
+
+        <!--&lt;!&ndash;增大音量&ndash;&gt;-->
+        <!--<ImageView-->
+            <!--android:id="@+id/upVolume"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/up_volume_f"-->
+            <!--android:button="@null"-->
+            <!--android:clickable="true" />-->
+
+        <!--&lt;!&ndash;上一曲&ndash;&gt;-->
+        <!--<ImageView-->
+            <!--android:id="@+id/mLastMusic"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/last_f"-->
+            <!--android:clickable="true" />-->
+
+        <!--&lt;!&ndash;暂停与播放&ndash;&gt;-->
+        <!--<CheckBox-->
+            <!--android:id="@+id/mPlayOrPause"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/play_selector"-->
+            <!--android:button="@null"-->
+            <!--android:checked="true" />-->
+        <!--&lt;!&ndash;下一曲&ndash;&gt;-->
+        <!--<ImageView-->
+            <!--android:id="@+id/mNextMusic"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/next_f"-->
+            <!--android:clickable="true" />-->
+
+        <!--&lt;!&ndash;歌词&ndash;&gt;-->
+        <!--<CheckBox-->
+            <!--android:id="@+id/mLyrics"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/lyrics_f"-->
+            <!--android:button="@null"-->
+            <!--android:checked="false" />-->
+        <!--&lt;!&ndash;播放模式:单曲、列表循环，随机播放&ndash;&gt;-->
+        <!--<ImageView-->
+            <!--android:id="@+id/mPlayMode"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/all_cycle" />-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/mCollect"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/collect_selector"-->
+            <!--android:button="@null"-->
+            <!--android:checked="false" />-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;侧边的小菜单&ndash;&gt;-->
+    <!--<CheckBox-->
+        <!--android:id="@+id/mSmallMenu"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:background="@drawable/menu_small_selector"-->
+        <!--android:button="@null"-->
+        <!--android:checked="false" />-->
+
+</RelativeLayout>

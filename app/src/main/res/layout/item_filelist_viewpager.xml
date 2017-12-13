@@ -1,0 +1,275 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/activity_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/item_file_manager_rl_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/item_file_manager_iv_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_file_manager_focus"
+                        android:focusable="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/media_1"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:padding="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                    >
+                        <TextView
+                            android:id="@+id/item_file_manager_tv_01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/file_manager_file_name_bg"
+                            android:ellipsize="marquee"
+                            android:gravity="center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="cover"
+                            android:textColor="#ffffff"
+                            android:textSize="25sp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="0.2"/>
+
+            <LinearLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/item_file_manager_rl_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/item_file_manager_iv_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_file_manager_focus"
+                        android:focusable="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/media_1"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="1dp"
+                        android:layout_alignParentBottom="true">
+                        <TextView
+                            android:id="@+id/item_file_manager_tv_02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/file_manager_file_name_bg"
+                            android:ellipsize="marquee"
+                            android:gravity="center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="cover"
+                            android:textColor="#ffffff"
+                            android:textSize="25sp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="0.2"/>
+
+            <LinearLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/item_file_manager_rl_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/item_file_manager_iv_03"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_file_manager_focus"
+                        android:focusable="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/media_1"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:padding="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true">
+                        <TextView
+                            android:id="@+id/item_file_manager_tv_03"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/file_manager_file_name_bg"
+                            android:ellipsize="marquee"
+                            android:gravity="center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="cover"
+                            android:textColor="#ffffff"
+                            android:textSize="25sp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="0.1"/>
+
+        <LinearLayout
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/item_file_manager_rl_04"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/item_file_manager_iv_04"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_file_manager_focus"
+                        android:focusable="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/media_1"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="1dp"
+                        android:layout_alignParentBottom="true">
+                        <TextView
+                            android:id="@+id/item_file_manager_tv_04"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/file_manager_file_name_bg"
+                            android:ellipsize="marquee"
+                            android:gravity="center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="cover"
+                            android:textColor="#ffffff"
+                            android:textSize="25sp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="0.2"/>
+
+            <LinearLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/item_file_manager_rl_05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/item_file_manager_iv_05"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_file_manager_focus"
+                        android:focusable="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/media_1"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="1dp"
+                        android:layout_alignParentBottom="true">
+                        <TextView
+                            android:id="@+id/item_file_manager_tv_05"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/file_manager_file_name_bg"
+                            android:ellipsize="marquee"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:text="cover"
+                            android:textColor="#ffffff"
+                            android:textSize="25sp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="0.2"/>
+
+            <LinearLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/item_file_manager_rl_06"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/item_file_manager_iv_06"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_file_manager_focus"
+                        android:focusable="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/media_1"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="1dp"
+                        android:layout_alignParentBottom="true">
+                        <TextView
+                            android:id="@+id/item_file_manager_tv_06"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/file_manager_file_name_bg"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:gravity="center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:text="cover"
+                            android:textColor="#ffffff"
+                            android:textSize="25sp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

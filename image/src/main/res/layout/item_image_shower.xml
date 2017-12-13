@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gesture-image="http://schemas.polites.com/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.polites.android.GestureImageView
+        android:id="@+id/gestureImageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:src="@mipmap/ic_launcher"
+        gesture-image:max-scale="10.0"
+        gesture-image:min-scale="0.75" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/gestureImageview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:clickable="true"-->
+        <!--android:src="@mipmap/ic_launcher" />-->
+
+</RelativeLayout>

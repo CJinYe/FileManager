@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/file_frame">
+
+        <ImageView
+            android:id="@+id/item_imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_launcher"/>
+
+        <!--  android:background="@drawable/media_12"-->
+        <!--android:background="@color/baby_text_bg_color"-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/file_frame_bottom">
+
+            <!--<TextView-->
+            <!--android:id="@+id/item_floatableTextView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:singleLine="true"-->
+            <!--android:textSize="24sp" />-->
+            <com.icox.manager.myview.floatable_textview.FloatableTextView
+                android:id="@+id/item_floatableTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="24sp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

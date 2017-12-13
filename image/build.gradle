@@ -1,0 +1,111 @@
+apply plugin: 'com.android.application'
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.icox.image_manager"
+        minSdkVersion 17
+        targetSdkVersion 22
+        versionCode 10
+        versionName "1.0.11"
+    }
+
+//    //执行lint检查，有任何的错误或者警告提示，都会终止构建，我们可以将其关掉。
+//    lintOptions {
+//        abortOnError false
+//    }
+
+    //签名
+    signingConfigs {
+        debug {
+
+        }
+
+        release {
+            // 自己的签名文件
+            storeFile file("../share.keystore")
+            storePassword "999999"
+            keyAlias "k.path"
+            keyPassword "999999"
+        }
+    }
+
+    buildTypes {
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+//            // 不显示Log
+//            buildConfigField "boolean", "LOG_DEBUG", "false"
+//            //混淆
+//            minifyEnabled true
+//            //Zipalign优化
+//            zipAlignEnabled true
+//
+//            // 移除无用的resource文件
+//            shrinkResources true
+//            //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明，后一个文件是自己的定义混淆文件
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            //签名
+//            signingConfig signingConfigs.release
+//
+//            applicationVariants.all { variant ->
+//                def file = variant.outputs[0].outputFile
+//                def appReleaseFileName = applicationId.substring(applicationId.lastIndexOf(".") + 1, applicationId.length()) +
+//                        "-v" + versionName +
+//                        "-sign" + versionCode +
+////                        "-time" + releaseTime() +
+//                        ".apk"
+//                variant.outputs[0].outputFile = new File(file.parent, appReleaseFileName)
+//            }
+        }
+
+        android.applicationVariants.all { variant ->
+            def file = variant.outputs[0].outputFile
+            def appReleaseFileName = applicationId.substring(applicationId.lastIndexOf(".") + 1, applicationId.length()) +
+                    "-v" + versionName +
+                    "-sign" + versionCode +
+                    ".apk"
+            variant.outputs[0].outputFile = new File(file.parent, appReleaseFileName)
+        }
+    }
+
+//        //渠道Flavors，配置不同风格的app,友盟渠道统计时用到
+//        productFlavors {
+//            "offical" {}
+//            "360" {}
+//            yingyongbao {}
+//            wandoujia {}
+//            baidu {}
+//            "91" {}
+//        }
+//    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/picasso-2.5.2.jar')
+    compile project(':updateapp-release')
+}

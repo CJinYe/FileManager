@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MediaFileManager</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <color name="dir_name_color_s">#edbe22</color>
+    <color name="dir_name_color_e">#ff7800</color>
+
+</resources>

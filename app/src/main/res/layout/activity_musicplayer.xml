@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+>
+
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#126ae2"
+                    android:padding="20dp">
+
+
+        <!--底部的按钮操作-->
+        <LinearLayout
+            android:id="@+id/rl_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#126ae2"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="1">
+
+                <!--降低音量-->
+                <ImageView
+                    android:id="@+id/downVolume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/volume_f"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:focusable="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="1">
+
+                <!--暂停与播放-->
+                <CheckBox
+                    android:id="@+id/mPlayOrPause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/selector_file_manager_local_music_play_"
+                    android:button="@null"
+                    android:checked="true"
+                    android:focusable="true"/>
+
+            </LinearLayout>
+            <!--增大音量-->
+
+            <LinearLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/upVolume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/up_volume_f"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:focusable="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="1">
+                <!--返回-->
+                <ImageView
+                    android:id="@+id/exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/pre_btn_exit"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:focusable="true"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

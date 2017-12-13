@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".activity.FileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#126ae2" android:orientation="horizontal"
+        android:weightSum="1280">
+
+        <!--三种模式的切换:本地、TF卡、U盘-->
+        <LinearLayout
+            style="@style/layout_horizontal"
+            android:layout_weight="295"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/layout_vertical"
+                android:layout_weight="1">
+                <!--<ImageButton-->
+                <!--android:id="@+id/main_ib_bendi"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@drawable/media_3"-->
+                <!--android:focusable="true" />-->
+                <ImageButton
+                    android:id="@+id/main_ib_bendi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/media_3"
+                    android:focusable="true"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/layout_vertical"
+                android:layout_weight="1">
+                <!--<ImageButton-->
+                <!--android:id="@+id/main_ib_tfka"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@drawable/media_5"-->
+                <!--android:focusable="true" />-->
+                <ImageButton
+                    android:id="@+id/main_ib_tfka"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/media_5"
+                    android:focusable="true"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/layout_vertical"
+                android:layout_weight="1">
+                <!--<ImageButton-->
+                <!--android:id="@+id/main_ib_upan"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@drawable/media_1"-->
+                <!--android:focusable="true" />-->
+                <ImageButton
+                    android:id="@+id/main_ib_upan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/media_1"
+                    android:focusable="true"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_vertical"
+                android:layout_weight="0.4">
+
+                <ImageButton
+                    android:id="@+id/main_iv_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/selector_but_go_back"/>
+            </LinearLayout>
+
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/main_ib_bendi"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:focusable="true"
+                    android:src="@drawable/media_3"
+                    android:background="@drawable/sel_focus"
+                    android:scaleType="fitXY" />
+                <ImageButton
+                    android:id="@+id/main_ib_tfka"
+                    android:layout_below="@id/main_ib_bendi"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:focusable="true"
+                    android:src="@drawable/media_5"
+                    android:background="@drawable/sel_focus"
+                    android:scaleType="fitXY" />
+                <ImageButton
+                    android:id="@+id/main_ib_upan"
+                    android:layout_below="@id/main_ib_tfka"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:focusable="true"
+                    android:src="@drawable/media_1"
+                    android:background="@drawable/sel_focus"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>-->
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/showFilesLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="985"
+            android:background="@drawable/nofiles">
+
+            <!--根據切換的模式，变换右側的內容-->
+            <LinearLayout
+                android:id="@+id/showFilesLayoutChild_A"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+                <!--显示当前文件的路径-->
+                <TextView
+                    android:id="@+id/currentPath"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="24sp"/>
+
+                <LinearLayout
+                    android:id="@+id/newFolderLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/new_folder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sel_focus"
+                            android:focusable="true"
+                            android:src="@drawable/new_folder_selector_old"/>
+                    </LinearLayout>
+
+                    <RelativeLayout android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_centerVertical="true"
+                                   android:layout_marginStart="2dp"
+                                   android:background="@drawable/file_manager_title_pager_bg"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/last"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="2dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/sel_last_focus"
+                                android:focusable="true"
+                                android:src="@drawable/selector_file_last_pager"/>
+
+                            <!--android:paddingBottom="15dp"-->
+                            <!--android:paddingEnd="10dp"-->
+                            <!--android:paddingStart="15dp"-->
+                            <!--android:paddingTop="15dp"-->
+
+                            <TextView
+                                android:id="@+id/tv_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/file_manager_number_bg"
+                                android:gravity="center"
+                                android:text="1/1"
+                                android:textColor="#ffffff"
+                                android:textSize="30sp"/>
+
+                            <ImageView
+                                android:id="@+id/next"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/sel_next_focus"
+                                android:focusable="true"
+                                android:src="@drawable/selector_file_next_pager"/>
+                            <!--android:paddingBottom="15dp"-->
+                            <!--android:paddingEnd="10dp"-->
+                            <!--android:paddingStart="10dp"-->
+                            <!--android:paddingTop="15dp"-->
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        style="@style/layout_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sel_focus"
+                            android:focusable="true"
+                            android:src="@drawable/back_selector_old"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--<GridView
+                    android:id="@+id/gridShow"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:horizontalSpacing="30dp"
+                    android:listSelector="#1589ff"
+                    android:numColumns="3"
+                    android:verticalSpacing="30dp"
+                    android:visibility="visible" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5">
+                    <!--<GridView-->
+                    <!--android:id="@+id/gridShow"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:numColumns="3"-->
+                    <!--android:listSelector="@drawable/selector_file_background"-->
+                    <!--android:horizontalSpacing="5dp"-->
+                    <!--android:verticalSpacing="5dp"/>-->
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/file_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+
+                <!--<com.icox.manager.myview.icox_gridview.IcoxGridView-->
+                <!--android:id="@+id/gridShow"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center"-->
+                <!--android:horizontalSpacing="30dp"-->
+                <!--android:listSelector="#1589ff"-->
+                <!--android:numColumns="3"-->
+                <!--android:verticalSpacing="30dp"-->
+                <!--android:visibility="visible">-->
+
+                <!--</com.icox.manager.myview.icox_gridview.IcoxGridView>-->
+
+                <!--粘贴布局Layout-->
+                <LinearLayout
+                    android:id="@+id/pasteLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/pasteCancel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/sel_focus"
+                                android:focusable="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/paste_cancel_selector_old"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/paste"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/sel_focus"
+                                android:focusable="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/paste_selector_old"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/pasteCancel"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:clickable="true"-->
+                    <!--android:focusable="true"-->
+                    <!--android:src="@drawable/paste_cancel_selector_old" />-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/paste"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:clickable="true"-->
+                    <!--android:focusable="true"-->
+                    <!--android:src="@drawable/paste_selector_old" />-->
+                </LinearLayout>
+
+                <!--移动Layout-->
+                <LinearLayout
+                    android:id="@+id/moveLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/moveCancel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/sel_focus"
+                                android:focusable="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/move_cancel_selector_old"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/move"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/sel_focus"
+                                android:focusable="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/move_selector_old"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/moveCancel"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:clickable="true"-->
+                    <!--android:focusable="true"-->
+                    <!--android:src="@drawable/move_cancel_selector_old" />-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/move"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:clickable="true"-->
+                    <!--android:focusable="true"-->
+                    <!--android:src="@drawable/move_selector_old" />-->
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/showFilesLayoutChild_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/pgbLoading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_loading"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

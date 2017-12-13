@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@drawable/dialog_young_bg"
+                  android:id="@+id/dialog_young_delete_layout"
+                  android:orientation="vertical">
+        <TextView android:id="@+id/dialog_young_delete_tv_title"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="73"
+                  android:gravity="center"
+                  android:text="删除"
+                  android:textColor="#0c779b"/>
+        <TextView android:id="@+id/dialog_young_delete_tv_tishi"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="95"
+                  android:gravity="center"
+                  android:text="删除后不可恢复，是否继续？"
+                  android:textColor="#0c779b"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="40"
+                      android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="54"/>
+
+            <ImageButton android:id="@+id/dialog_young_delete_but_cancel"
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="120"
+                         android:background="@null"
+                         android:scaleType="fitXY"
+                         android:src="@drawable/selector_dialog_young_delete_cancel"/>
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="84"/>
+            <ImageButton android:id="@+id/dialog_young_delete_but_sure"
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="120"
+                         android:background="@null"
+                         android:scaleType="fitXY"
+                         android:src="@drawable/selector_dialog_young_delete_sure"/>
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="54"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="0dp"
+                      android:layout_weight="24"/>
+    </LinearLayout>
+
+</LinearLayout>

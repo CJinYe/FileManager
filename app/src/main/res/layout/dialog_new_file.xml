@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:orientation="horizontal">
+
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/new_file_dialog_background">
+
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerHorizontal="true"
+                  android:layout_centerVertical="true"
+                  android:orientation="vertical">
+        <EditText
+            android:id="@+id/dialog_new_file_edt"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/new_file_dialog_edt_bg"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:hint="输入文件夹名..."
+            android:textColor="#7a9fed"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="20dp"
+                      android:layout_gravity="center"
+                      android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/dialog_new_file_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/selector_dialog_new_file_cancel"
+                android:background="@drawable/sel_focus"/>
+            <ImageButton
+                android:id="@+id/dialog_new_file_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/selector_dialog_new_file_sure"
+                android:background="@drawable/sel_focus"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

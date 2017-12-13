@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/file_manager_last_focus" android:state_focused="true"/>
+    <!--<item android:drawable="@drawable/file_manager_last_bg_normal"/>-->
+    <item android:drawable="@android:color/transparent"/>
+</selector>

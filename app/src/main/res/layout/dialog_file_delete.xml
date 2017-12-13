@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/dialog_file_delete_background"
+              android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="5"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1.5"/>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="0dp"
+                  android:layout_gravity="center"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginRight="15dp"
+                  android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/dialog_file_delete_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/sel_focus"
+            android:focusable="true"
+            android:src="@drawable/selector_dialog_new_file_cancel"/>
+        <ImageButton
+            android:id="@+id/dialog_file_delete_sure"
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sel_focus"
+            android:focusable="true"
+            android:src="@drawable/selector_dialog_new_file_sure"/>
+    </LinearLayout>
+</LinearLayout>

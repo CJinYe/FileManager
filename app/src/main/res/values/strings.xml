@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">资源管理器</string>
+    <string name="module_file__name">文件管理器</string>
+    <string name="module_music__name">音乐播放器</string>
+    <string name="module_video__name">视频播放器</string>
+    <string name="module_image__name">图片浏览器</string>
+
+    <string name="sdcard_error">SDCard有问题，或者写保护！</string>
+    <string name="file_manager">文件管理器</string>
+    <string name="can_not_open_file">无法打开，请安装相应的软件！</string>
+    <string name="not_file">对不起，这不是文件！</string>
+
+
+
+    <string name="tv_loading">加载中...</string>
+</resources>

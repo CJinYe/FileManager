@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_image_dir"
+    android:background="@mipmap/baby_main_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="160"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></LinearLayout>
+        <LinearLayout
+            android:layout_weight="490"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_weight="334"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"></LinearLayout>
+            <LinearLayout
+                android:layout_weight="867"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--<com.icox.imageview.view.ImagePagerView-->
+                        <!--android:id="@+id/ipv_image_dir_list"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"></com.icox.imageview.view.ImagePagerView>-->
+
+                    <com.icox.imageview.view.ImagePagerView
+                        android:id="@+id/ipv_bendi_dir_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></com.icox.imageview.view.ImagePagerView>
+                    <com.icox.imageview.view.ImagePagerView
+                        android:id="@+id/ipv_tfka_dir_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></com.icox.imageview.view.ImagePagerView>
+                    <com.icox.imageview.view.ImagePagerView
+                        android:id="@+id/ipv_upan_dir_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></com.icox.imageview.view.ImagePagerView>
+
+                    <ImageView
+                        android:id="@+id/iv_no_files"
+                        android:src="@mipmap/no_files"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="79"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"></LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="100"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

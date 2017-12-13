@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/baby_file_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/showFilesLayoutChild_A"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <GridView
+                android:id="@+id/gridShow"
+                android:numColumns="4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></GridView>
+        </AbsoluteLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                style="@style/layout_vertical"
+                android:orientation="horizontal"
+                android:layout_weight="71">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--&lt;!&ndash;显示当前文件的路径&ndash;&gt;-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/currentPath"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text=""-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="24sp" />-->
+
+                    <!--&lt;!&ndash;android:src="@drawable/back_selector"&ndash;&gt;-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/back"-->
+                        <!--android:layout_marginLeft="30dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:focusable="true"-->
+                        <!--android:src="@drawable/back_selector"-->
+                        <!--android:background="@drawable/sel_focus"-->
+                        <!--android:scaleType="fitXY" />-->
+
+                    <!--&lt;!&ndash;android:src="@drawable/new_folder_selector"&ndash;&gt;-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/new_folder"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginRight="30dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:focusable="true"-->
+                        <!--android:src="@mipmap/file_btn_mkdir"-->
+                        <!--android:background="@drawable/sel_focus"-->
+                        <!--android:scaleType="fitXY" />-->
+                </RelativeLayout>
+
+                <!--
+                &lt;!&ndash;android:src="@drawable/back_selector"&ndash;&gt;
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+
+                    android:background="@mipmap/file_btn_back"
+                    android:scaleType="fitXY" />
+                &lt;!&ndash;显示当前文件的路径&ndash;&gt;
+                <TextView
+                    android:id="@+id/currentPath"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="24sp" />
+                &lt;!&ndash;android:src="@drawable/new_folder_selector"&ndash;&gt;
+                <ImageView
+                    android:id="@+id/new_folder"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+
+                    android:background="@mipmap/file_btn_mkdir"
+                    android:scaleType="fitXY" />
+                -->
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/layout_vertical"
+                android:orientation="horizontal"
+                android:layout_weight="729">
+                <LinearLayout
+                    style="@style/layout_horizontal"
+                    android:layout_weight="261">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <!--<ImageButton
+                            android:id="@+id/main_ib_upan"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:background="@drawable/baby_upan"
+                            android:scaleType="fitXY" />
+                        <ImageButton
+                            android:id="@+id/main_ib_tfka"
+                            android:layout_below="@id/main_ib_upan"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:background="@drawable/baby_tf"
+                            android:scaleType="fitXY" />
+                        <ImageButton
+                            android:id="@+id/main_ib_bendi"
+                            android:layout_below="@id/main_ib_tfka"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:background="@drawable/baby_bendi"
+                            android:scaleType="fitXY" />-->
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/layout_horizontal"
+
+                    android:layout_weight="1019">
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/showFilesLayout"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent">-->
+                        <!--&lt;!&ndash;<LinearLayout-->
+                            <!--android:id="@+id/showFilesLayoutChild_A"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent">-->
+                            <!--<GridView-->
+                                <!--android:id="@+id/gridShow"-->
+                                <!--android:numColumns="3"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"></GridView>-->
+                        <!--</LinearLayout>&ndash;&gt;-->
+
+                        <!--&lt;!&ndash;<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent">-->
+                            <!--&lt;!&ndash;粘贴布局Layout&ndash;&gt;-->
+                            <!--<LinearLayout-->
+                                <!--android:id="@+id/pasteLayout"-->
+                                <!--android:layout_alignParentBottom="true"-->
+                                <!--android:background="@mipmap/file_bg_01"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:visibility="gone"-->
+                                <!--android:weightSum="2">-->
+                                <!--<LinearLayout-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_weight="1">-->
+                                    <!--<RelativeLayout-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="match_parent">-->
+                                        <!--<ImageView-->
+                                            <!--android:id="@+id/pasteCancel"-->
+                                            <!--android:layout_centerInParent="true"-->
+                                            <!--android:layout_width="wrap_content"-->
+                                            <!--android:layout_height="wrap_content"-->
+                                            <!--android:focusable="true"-->
+                                            <!--android:src="@drawable/paste_cancel_selector"-->
+                                            <!--android:background="@drawable/sel_focus"-->
+                                            <!--android:scaleType="fitXY" />-->
+                                    <!--</RelativeLayout>-->
+                                <!--</LinearLayout>-->
+                                <!--<LinearLayout-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_weight="1">-->
+                                    <!--<RelativeLayout-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="match_parent">-->
+                                        <!--<ImageView-->
+                                            <!--android:id="@+id/paste"-->
+                                            <!--android:layout_centerInParent="true"-->
+                                            <!--android:layout_width="wrap_content"-->
+                                            <!--android:layout_height="wrap_content"-->
+                                            <!--android:focusable="true"-->
+                                            <!--android:src="@drawable/paste_selector"-->
+                                            <!--android:background="@drawable/sel_focus"-->
+                                            <!--android:scaleType="fitXY" />-->
+                                    <!--</RelativeLayout>-->
+                                <!--</LinearLayout>-->
+                            <!--</LinearLayout>-->
+
+                            <!--&lt;!&ndash;移动Layout&ndash;&gt;-->
+                            <!--<LinearLayout-->
+                                <!--android:id="@+id/moveLayout"-->
+                                <!--android:layout_alignParentBottom="true"-->
+                                <!--android:background="@mipmap/file_bg_01"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:visibility="gone"-->
+                                <!--android:weightSum="2">-->
+                                <!--<LinearLayout-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_weight="1">-->
+                                    <!--<RelativeLayout-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="match_parent">-->
+                                        <!--<ImageView-->
+                                            <!--android:id="@+id/moveCancel"-->
+                                            <!--android:layout_centerInParent="true"-->
+                                            <!--android:layout_width="wrap_content"-->
+                                            <!--android:layout_height="wrap_content"-->
+                                            <!--android:focusable="true"-->
+                                            <!--android:src="@drawable/move_cancel_selector"-->
+                                            <!--android:background="@drawable/sel_focus"-->
+                                            <!--android:scaleType="fitXY" />-->
+                                    <!--</RelativeLayout>-->
+                                <!--</LinearLayout>-->
+                                <!--<LinearLayout-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_weight="1">-->
+                                    <!--<RelativeLayout-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="match_parent">-->
+                                        <!--<ImageView-->
+                                            <!--android:id="@+id/move"-->
+                                            <!--android:layout_centerInParent="true"-->
+                                            <!--android:layout_width="wrap_content"-->
+                                            <!--android:layout_height="wrap_content"-->
+                                            <!--android:focusable="true"-->
+                                            <!--android:src="@drawable/move_selector"-->
+                                            <!--android:background="@drawable/sel_focus"-->
+                                            <!--android:scaleType="fitXY" />-->
+                                    <!--</RelativeLayout>-->
+                                <!--</LinearLayout>-->
+                            <!--</LinearLayout>-->
+                        <!--</RelativeLayout>&ndash;&gt;-->
+                    <!--</RelativeLayout>-->
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/main_ib_upan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/baby_btn_upan" />
+        <ImageButton
+            android:id="@+id/main_ib_tfka"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/baby_btn_tf" />
+        <ImageButton
+            android:id="@+id/main_ib_bendi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/baby_btn_bendi" />
+
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/main_rl_path"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--&lt;!&ndash;显示当前文件的路径&ndash;&gt;-->
+            <!--<TextView-->
+                <!--android:id="@+id/currentPath"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=""-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="24sp" />-->
+        <!--</RelativeLayout>-->
+        <!--显示当前文件的路径-->
+        <TextView
+            android:id="@+id/currentPath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/text_color"
+            android:textSize="24sp" />
+
+        <!--android:src="@drawable/back_selector"-->
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_selector"
+            android:background="@drawable/sel_focus" />
+
+        <!--android:src="@drawable/new_folder_selector"-->
+        <ImageView
+            android:id="@+id/new_folder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/new_folder_selector"
+            android:background="@drawable/sel_focus" />
+
+        <RelativeLayout
+            android:id="@+id/showFilesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:background="@drawable/media_9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </AbsoluteLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--粘贴布局Layout-->
+            <!--<LinearLayout
+                android:id="@+id/pasteLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/pasteCancel"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:src="@drawable/paste_cancel_selector"
+                            android:background="@drawable/sel_focus"
+                            android:scaleType="fitXY" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/paste"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:src="@drawable/paste_selector"
+                            android:background="@drawable/sel_focus"
+                            android:scaleType="fitXY" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>-->
+            <AbsoluteLayout
+                android:id="@+id/pasteLayout"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/pasteCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/paste_cancel_selector"
+                    android:background="@drawable/sel_focus"/>
+                <ImageView
+                    android:id="@+id/paste"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/paste_selector"
+                    android:background="@drawable/sel_focus"/>
+            </AbsoluteLayout>
+
+
+
+            <!--移动Layout-->
+            <!--<LinearLayout
+                android:id="@+id/moveLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/moveCancel"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:src="@drawable/move_cancel_selector"
+                            android:background="@drawable/sel_focus"
+                            android:scaleType="fitXY" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/move"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:src="@drawable/move_selector"
+                            android:background="@drawable/sel_focus"
+                            android:scaleType="fitXY" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>-->
+            <AbsoluteLayout
+                android:id="@+id/moveLayout"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/moveCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/move_cancel_selector"
+                    android:background="@drawable/sel_focus" />
+                <ImageView
+                    android:id="@+id/move"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/move_selector"
+                    android:background="@drawable/sel_focus" />
+            </AbsoluteLayout>
+        </AbsoluteLayout>
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/showFilesLayoutChild_B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/pgbLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_loading"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/music_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/littleDefault"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp" />
+
+    <com.icox.administrator.icoxmp3player.myview.floatable_textview.FloatableTextView
+        android:id="@+id/floatable_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/musicAllTime"
+        android:layout_toRightOf="@+id/littleDefault"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#4a4a4a"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/musicAllTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+</RelativeLayout>
+

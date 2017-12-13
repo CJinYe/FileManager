@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/IcoxManager.iml" filepath="$PROJECT_DIR$/IcoxManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ImageShower/ImageShower.iml" filepath="$PROJECT_DIR$/ImageShower/ImageShower.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MusicPlayer/MusicPlayer.iml" filepath="$PROJECT_DIR$/MusicPlayer/MusicPlayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/image/image.iml" filepath="$PROJECT_DIR$/image/image.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pictureVideo/pictureVideo.iml" filepath="$PROJECT_DIR$/pictureVideo/pictureVideo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/publicshare/publicshare.iml" filepath="$PROJECT_DIR$/publicshare/publicshare.iml" />
+      <module fileurl="file://$PROJECT_DIR$/updateapp-release/updateapp-release.iml" filepath="$PROJECT_DIR$/updateapp-release/updateapp-release.iml" />
+    </modules>
+  </component>
+</project>

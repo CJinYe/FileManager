@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@mipmap/baby_video_dir_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="100"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/baby_dir_name"
+                    android:textColor="@color/dir_name_color_e"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="650"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/filelist_vp_file"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <AbsoluteLayout
+        android:id="@+id/baby_video_list_al"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></AbsoluteLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="19"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"></LinearLayout>
+            <LinearLayout
+                android:layout_weight="72"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_weight="1183"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"></LinearLayout>
+                <LinearLayout
+                    android:layout_weight="71"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/btn_key_back_list"
+                        android:background="@drawable/pre_baby_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="26"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"></LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="660"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"></LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

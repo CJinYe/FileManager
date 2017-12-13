@@ -1,0 +1,2 @@
+include ':app', ':pictureVideo', ':MusicPlayer', ':publicshare', ':image', ':updateapp-release'
+include ':ImageShower'

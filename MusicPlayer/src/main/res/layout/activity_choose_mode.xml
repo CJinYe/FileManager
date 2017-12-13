@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#126ae2"
+                tools:context=".ui.activity.ChooseModeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1280">
+
+        <LinearLayout
+            style="@style/layout_horizontal"
+            android:layout_weight="295"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/layout_vertical"
+                    android:layout_weight="1">
+                    <ImageButton
+                        android:id="@+id/main_ib_bendi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/media_3"
+                        android:focusable="true"
+                        android:scaleType="fitXY"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layout_vertical"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/main_ib_tfka"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/media_5"
+                        android:focusable="true"
+                        android:scaleType="fitXY"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layout_vertical"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/main_ib_upan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/media_1"
+                        android:focusable="true"
+                        android:scaleType="fitXY"/>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/layout_vertical"
+                    android:layout_weight="0.4">
+
+                    <ImageButton
+                        android:id="@+id/iv_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_but_go_back"
+                        android:focusable="true"
+                        android:scaleType="centerCrop"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_showMusicList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="985">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:id="@+id/rl_showMusicListChild_A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            style="@style/layout_horizontal"
+                            android:layout_weight="1"
+                            android:gravity="center">
+                            <ImageView
+                                android:id="@+id/allMusics"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/sel_focus"
+                                android:focusable="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/all_music"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/layout_horizontal"
+                            android:layout_weight="1"
+                            android:gravity="center">
+                            <ImageView
+                                android:id="@+id/myCollection"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/sel_focus"
+                                android:focusable="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/my_collection"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:listSelector="@drawable/sel_focus"
+                    android:layout_weight="1"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rl_showMusicListChild_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载中..."
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+</RelativeLayout>
